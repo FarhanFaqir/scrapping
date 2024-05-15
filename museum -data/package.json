@@ -1,0 +1,21 @@
+{
+  "name": "scraping-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.21",
+    "puppeteer": "^19.11.1",
+    "puppeteer-core": "^19.4.1",
+    "xlsx": "^0.18.5"
+  }
+}

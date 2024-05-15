@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/tennis-ball.png">
+    <title>Tennis Players Stats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container vh-100">
+        <div class="row vh-100 m-0">
+            <div class="col-lg-6 my-auto p-0 card">
+                <img class="w-100" style="height: 490px;" src="/images/tennisplayer.jpeg" alt="Tennis Player">
+            </div>
+            <div class="col-lg-6 my-auto p-0 card">
+                <form class="px-4 py-5" method="POST" action="/">
+                    <div class="form-group row">
+                        <label class=" col-lg-3 col-form-label">Filter Type :</label>
+                        <div class="col-lg-9">
+                            <select class="form-select  col-lg-6" name="filterType" aria-label="Default select example">
+                                <option selected>Select filter type</option>
+                                <option value="Statistics">Statistics</option>
+                                <option value="Performance">Performance</option>
+                                <option value="Matches">Matches</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="staticEmail" class="col-lg-3 col-form-label">Player Name : </label>
+                        <div class="col-lg-9">
+                            <input type="text" name="playerName" class="form-control" placeholder="Player Name">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row mt-3">
+                        <label class=" col-lg-3 col-form-label">Season :</label>
+                        <div class="col-lg-9">
+                            <select class="form-select  col-lg-6" name="season" aria-label="Default select example">
+                                <option selected>Select Season</option>
+                                <option value="Career">Career</option>
+                                <option value="Last 52 Weeks">Last 52 Weeks</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <label class=" col-lg-3 col-form-label">Level :</label>
+                        <div class="col-lg-9">
+                            <select class="form-select  col-lg-6" name="level" aria-label="Default select example">
+                                <option selected>Select Level</option>
+                                <option value="All levels">All levels</option>
+                                <option value="Grand Salam">Grand Salam</option>
+                                <option value="ATP 500">ATP 500</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <label class=" col-lg-3 col-form-label">Surface :</label>
+                        <div class="col-lg-9">
+                            <select class="form-select  col-lg-6" name="surface" aria-label="Default select example">
+                                <option selected>Select Surface</option>
+                                <option value="All surfaces">All surfaces</option>
+                                <option value="Hard">Hard</option>
+                                <option value="Clay">Clay</option>
+                                <option value="Fast">Fast</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Slow">Slow</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <label class=" col-lg-3 col-form-label">Opponent :</label>
+                        <div class="col-lg-9">
+                            <select class="form-select  col-lg-6" name="opponent" aria-label="Default select example">
+                                <option selected>Select Opponent</option>
+                                <option value="Vs All">Vs All</option>
+                                <option value="Top 5">Top 5</option>
+                                <option value="Top 10">Top 10</option>
+                                <option value="Top 50">Top 50</option>
+                                <option value="Top 100">Top 100</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-5">Filter & Export to Excel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
